@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message MapMetaData {
+  optional time map_load_time = 1;
+  optional float resolution = 2;
+  optional uint32 width = 3;
+  optional uint32 height = 4;
+  optional Pose origin = 5;
+}

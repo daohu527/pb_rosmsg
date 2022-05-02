@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message CameraInfo {
+  optional Header header = 1;
+
+  optional uint32 height = 2;
+  optional uint32 width = 3;
+
+  optional string distortion_model;
+
+  repeated float D;
+
+  # 3x3 row-major matrix
+  repeated float  K;
+
+  # 3x3 row-major matrix
+  repeated float  R;
+
+  # 3x4 row-major matrix
+  repeated float64[12] P;
+
+  optional uint32 binning_x;
+  optional uint32 binning_y;
+
+  optional RegionOfInterest roi;
+}

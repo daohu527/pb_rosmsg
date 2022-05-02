@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Mesh {
+  repeated MeshTriangle triangles = 1;
+  repeated Point vertices = 2;
+}
+

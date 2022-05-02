@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Image {
+  optional Header header = 1;
+  optional uint32 height = 2;
+  optional uint32 width = 3;
+  optional string encoding = 4;
+  optional uint32 is_bigendian = 5;
+  optional uint32 step = 6;
+  optional string data = 7;
+}

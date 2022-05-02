@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message CompressedImage {
+  optional Header header = 1;
+  optional float fluid_pressure = 2;
+  optional float variance = 3;
+}

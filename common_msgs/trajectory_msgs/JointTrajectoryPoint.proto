@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message JointTrajectoryPoint {
+  repeated float positions = 1;
+  repeated float velocities = 2;
+  repeated float accelerations = 3;
+  repeated float effort = 4;
+  optional duration time_from_start = 5;
+}

@@ -1,0 +1,39 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message InteractiveMarkerControl {
+  optional string name = 1;
+  optional Quaternion orientation = 2;
+
+  enum ORIENTATION_MODE {
+    INHERIT = 0
+    FIXED = 1
+    VIEW_FACING = 2
+  }
+
+  optional ORIENTATION_MODE orientation_mode = 3;
+
+  enum INTERACTION_MODE {
+    NONE = 0
+    MENU = 1
+    BUTTON = 2
+    MOVE_AXIS = 3
+    MOVE_PLANE = 4
+    ROTATE_AXIS = 5
+    MOVE_ROTATE = 6
+    MOVE_3D = 7
+    ROTATE_3D = 8
+    MOVE_ROTATE_3D = 9
+  }
+
+  optional INTERACTION_MODE interaction_mode = 4;
+
+  optional bool always_visible = 5;
+
+  repeated Marker markers = 6;
+
+  optional bool independent_marker_orientation = 7;
+
+  optional string description = 8;
+}

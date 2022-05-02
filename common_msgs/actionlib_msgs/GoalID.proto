@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message GoalID {
+  optional time stamp = 1;
+  optional string id = 2;
+}

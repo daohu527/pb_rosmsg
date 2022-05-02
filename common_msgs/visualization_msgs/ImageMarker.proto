@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message ImageMarker {
+  enum TYPE {
+    CIRCLE=0;
+    LINE_STRIP=1;
+    LINE_LIST=2;
+    POLYGON=3;
+    POINTS=4;
+  }
+
+  enum ACTION {
+    ADD=0;
+    REMOVE=1;
+  }
+
+  optional Header header = 1;
+  optional string ns = 2;
+  optional int32 id = 3;
+  optional TYPE type = 4;
+  optional ACTION action = 5;
+  optional Point position = 6;
+
+  optional float scale = 7;
+  optional ColorRGBA outline_color = 8;
+  optional uint32 filled = 9;
+  optional ColorRGBA fill_color = 10;
+  optional duration lifetime = 11;
+
+  repeated Point points = 12;
+  repeated ColorRGBA outline_colors = 13;
+}

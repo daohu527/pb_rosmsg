@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Joy {
+  optional Header header = 1;
+  repeated float axes = 2;
+  repeated int32 buttons = 3;
+}

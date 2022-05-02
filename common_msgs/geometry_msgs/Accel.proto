@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Accel {
+  optional Vector3 linear = 1;
+  optional Vector3 angular = 2;
+}

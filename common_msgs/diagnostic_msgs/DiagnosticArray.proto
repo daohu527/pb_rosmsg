@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message DiagnosticArray {
+  optional Header header = 1;
+  repeated DiagnosticStatus status = 2;
+}

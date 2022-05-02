@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message InteractiveMarkerFeedback {
+  optional Header header = 1;
+  optional string client_id = 2;
+
+  optional string marker_name = 3;
+  optional string control_name = 4;
+
+  enum EVENT_TYPE {
+    KEEP_ALIVE = 0;
+    POSE_UPDATE = 1;
+    MENU_SELECT = 2;
+    BUTTON_CLICK = 3;
+
+    MOUSE_DOWN = 4;
+    MOUSE_UP = 5;
+  }
+
+  optional EVENT_TYPE event_type = 5;
+
+  optional Pose pose = 6;
+  optional uint32 menu_entry_id = 7;
+
+  optional Point mouse_point = 8;
+  optional bool mouse_point_valid = 9;
+}

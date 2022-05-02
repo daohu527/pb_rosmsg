@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message DisparityImage {
+  optional Header header = 1;
+  optional Image image = 2;
+  optional float f = 3;
+  optional float T = 4;
+  optional RegionOfInterest valid_window= 5;
+
+  optional float min_disparity = 6;
+  optional float max_disparity = 7;
+  optional float delta_d = 8;
+}

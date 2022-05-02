@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Range {
+  optional Header header = 1;
+
+  enum TYPE{
+    ULTRASOUND = 0;
+    INFRARED = 1;
+  }
+
+  optional TYPE radiation_type = 2;
+  optional float field_of_view = 3;
+  optional float min_range = 4;
+  optional float max_range = 5;
+  optional float range = 6;
+}

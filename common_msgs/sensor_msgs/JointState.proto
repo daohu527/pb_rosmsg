@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Image {
+  optional Header header = 1;
+  repeated string name = 2;
+  repeated float position = 3;
+  repeated float velocity = 4;
+  repeated float effort = 5;
+}

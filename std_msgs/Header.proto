@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Header {
+  optional uint32 seq = 1;
+  optional Time stamp = 2;
+  optional string frame_id = 3;
+}

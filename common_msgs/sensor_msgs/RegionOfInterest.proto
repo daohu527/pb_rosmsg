@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message RegionOfInterest {
+  optional uint32 x_offset = 1;
+  optional uint32 y_offset = 2;
+  optional uint32 height = 3;
+  optional uint32 width = 4;
+  optional bool do_rectify = 5;
+}

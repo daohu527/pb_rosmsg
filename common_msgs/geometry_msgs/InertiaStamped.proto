@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message InertiaStamped {
+  optional Header header = 1;
+  optional Inertia inertia = 2;
+}

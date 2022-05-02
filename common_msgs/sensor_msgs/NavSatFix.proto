@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message NavSatFix {
+  optional Header header = 1;
+  optional NavSatStatus status = 2;
+  optional float latitude = 3;
+  optional float longitude = 4;
+  optional float altitude = 5;
+
+  repeated float position_covariance = 6;
+
+  enum COVARIANCE_TYPE {
+    COVARIANCE_TYPE_UNKNOWN = 0;
+    COVARIANCE_TYPE_APPROXIMATED = 1;
+    COVARIANCE_TYPE_DIAGONAL_KNOWN = 2;
+    COVARIANCE_TYPE_KNOWN = 3;
+  }
+
+  optional COVARIANCE_TYPE position_covariance_type = 7;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message TwistWithCovariance {
+  optional Twist twist = 1;
+  repeated float covariance = 2;
+}

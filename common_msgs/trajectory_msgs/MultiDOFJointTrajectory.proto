@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message MultiDOFJointTrajectory {
+  optional Header header = 1;
+  repeated string joint_names = 2;
+  repeated MultiDOFJointTrajectoryPoint points = 3;
+}

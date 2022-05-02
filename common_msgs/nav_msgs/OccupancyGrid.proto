@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message OccupancyGrid {
+  optional Header header = 1;
+  optional MapMetaData info = 2;
+  optional bytes data = 3;
+
+}
+

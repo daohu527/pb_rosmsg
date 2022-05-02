@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message PoseWithCovarianceStamped {
+  optional Header header = 1;
+  optional PoseWithCovariance pose = 2;
+}

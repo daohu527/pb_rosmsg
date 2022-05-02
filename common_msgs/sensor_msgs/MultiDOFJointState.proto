@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message MultiDOFJointState {
+  optional Header header = 1;
+  repeated string joint_names = 2;
+  repeated Transform transforms = 3;
+  repeated Twist twist = 4;
+  repeated Wrench wrench = 5;
+}

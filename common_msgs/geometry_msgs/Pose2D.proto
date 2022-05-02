@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Pose2D {
+  optional float x = 1;
+  optional float y = 2;
+  optional float theta = 3;
+}

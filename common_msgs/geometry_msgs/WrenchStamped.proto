@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message WrenchStamped {
+  optional Header header = 1;
+  optional Wrench wrench = 2;
+}

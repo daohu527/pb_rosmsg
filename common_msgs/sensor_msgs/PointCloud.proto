@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message PointCloud {
+  optional Header header = 1;
+
+  repeated Point32 points = 2;
+
+  repeated ChannelFloat32 channels = 3;
+}

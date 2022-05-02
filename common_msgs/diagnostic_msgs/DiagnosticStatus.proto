@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message DiagnosticStatus {
+  enum LEVEL {
+    OK=0
+    WARN=1
+    ERROR=2
+    STALE=3
+  }
+  optional LEVEL level = 1;
+  optional string name = 2;
+  optional string message = 3;
+  optional string hardware_id = 4;
+  repeated KeyValue values = 5;
+}
+

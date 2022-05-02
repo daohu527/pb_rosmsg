@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Temperature {
+  optional Header header = 1;
+  optional float temperature = 2;
+  optional float variance = 3;
+}

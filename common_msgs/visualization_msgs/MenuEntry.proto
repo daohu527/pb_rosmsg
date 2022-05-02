@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message MenuEntry {
+  optional uint32 id = 1;
+  optional uint32 parent_id = 2;
+  optional string title = 3;
+  optional string command = 4;
+
+  enum COMMAND_TYPE{
+    FEEDBACK=0
+    ROSRUN=1
+    ROSLAUNCH=2
+  }
+  optional COMMAND_TYPE command_type;
+
+}

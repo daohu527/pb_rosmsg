@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message MeshTriangle {
+  repeated uint32 vertex_indices = 1;
+}

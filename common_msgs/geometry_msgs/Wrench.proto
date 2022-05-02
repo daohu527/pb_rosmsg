@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Wrench {
+  optional Vector3 force = 1;
+  optional Vector3 torque = 2;
+}

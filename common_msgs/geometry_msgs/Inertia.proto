@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Inertia {
+  optional float m = 1;
+  optional Vector3 com = 2;
+  optional float ixx = 3;
+  optional float ixy = 4;
+  optional float ixz = 5;
+  optional float iyy = 6;
+  optional float iyz = 7;
+  optional float izz = 8;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message AccelStamped {
+  optional Header header = 1;
+  optional Accel accel = 2;
+}

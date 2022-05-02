@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message GoalStatusArray {
+  optional Header header = 1;
+  repeated GoalStatus status_list = 2;
+}

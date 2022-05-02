@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message TimeReference {
+  optional Header header = 1;
+  optional time time_ref = 2;
+  optional string source = 3;
+}

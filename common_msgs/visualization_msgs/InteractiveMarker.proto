@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message InteractiveMarker {
+  optional Header header = 1;
+  optional Pose pose = 2;
+  optional string name = 3;
+  optional string description = 4;
+  optional float scale = 5;
+
+  repeated MenuEntry menu_entries = 6;
+  repeated InteractiveMarkerControl controls = 7;
+}

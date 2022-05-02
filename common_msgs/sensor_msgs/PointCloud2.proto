@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message PointCloud2 {
+  optional Header header = 1;
+  optional uint32 height = 2;
+  optional uint32 width = 3;
+  repeated PointField fields = 4;
+  optional bool is_bigendian = 5;
+  optional uint32 point_step = 6;
+  optional uint32 row_step = 7;
+  optional bytes data = 8;
+  optional bool is_dense = 9;
+}

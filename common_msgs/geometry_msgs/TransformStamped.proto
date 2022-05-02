@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message TransformStamped {
+  optional Header header = 1;
+  optional string child_frame_id = 2;
+  optional Transform transform = 3;
+}

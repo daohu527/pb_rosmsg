@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message PoseStamped {
+  optional Header header = 1;
+  optional Pose pose = 2;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message InteractiveMarkerUpdate {
+  optional string server_id = 1;
+  optional uint64 seq_num = 2;
+
+  enum TYPE {
+    KEEP_ALIVE = 0;
+    UPDATE = 1;
+  }
+
+  optional TYPE type = 3;
+
+  repeated InteractiveMarker markers = 4;
+  repeated InteractiveMarkerPose poses = 5;
+
+  repeated string erases = 6;
+}

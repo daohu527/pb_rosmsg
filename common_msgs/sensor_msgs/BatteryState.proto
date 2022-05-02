@@ -1,0 +1,55 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message BatteryState {
+  enum POWER_SUPPLY_STATUS {
+    POWER_SUPPLY_STATUS_UNKNOWN = 0;
+    POWER_SUPPLY_STATUS_CHARGING = 1;
+    POWER_SUPPLY_STATUS_DISCHARGING = 2;
+    POWER_SUPPLY_STATUS_NOT_CHARGING = 3;
+    POWER_SUPPLY_STATUS_FULL = 4;
+  }
+
+  enum POWER_SUPPLY_HEALTH {
+    POWER_SUPPLY_HEALTH_UNKNOWN = 0;
+    POWER_SUPPLY_HEALTH_GOOD = 1;
+    POWER_SUPPLY_HEALTH_OVERHEAT = 2;
+    POWER_SUPPLY_HEALTH_DEAD = 3;
+    POWER_SUPPLY_HEALTH_OVERVOLTAGE = 4;
+    POWER_SUPPLY_HEALTH_UNSPEC_FAILURE = 5;
+    POWER_SUPPLY_HEALTH_COLD = 6;
+    POWER_SUPPLY_HEALTH_WATCHDOG_TIMER_EXPIRE = 7;
+    POWER_SUPPLY_HEALTH_SAFETY_TIMER_EXPIRE = 8;
+  }
+
+  enum POWER_SUPPLY_TECHNOLOGY {
+    POWER_SUPPLY_TECHNOLOGY_UNKNOWN = 0;
+    POWER_SUPPLY_TECHNOLOGY_NIMH = 1;
+    POWER_SUPPLY_TECHNOLOGY_LION = 2;
+    POWER_SUPPLY_TECHNOLOGY_LIPO = 3;
+    POWER_SUPPLY_TECHNOLOGY_LIFE = 4;
+    POWER_SUPPLY_TECHNOLOGY_NICD = 5;
+    POWER_SUPPLY_TECHNOLOGY_LIMN = 6;
+  }
+
+  optional Header header = 1;
+  optional float voltage = 2;
+  optional float temperature = 3;
+  optional float current = 4;
+  optional float charge = 5;
+  optional float capacity = 6;
+  optional float design_capacity = 7;
+  optional float percentage = 8;
+
+  optional uint32 power_supply_status = 9;
+  optional uint32 power_supply_health = 10;
+  optional uint32 power_supply_technology = 11;
+  optional bool present = 12;
+
+  repeated float cell_voltage = 13;
+  repeated float cell_temperature = 14;
+
+  optional string location = 15;
+  optional string serial_number = 16;
+}

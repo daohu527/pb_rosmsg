@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message PointStamped {
+  optional Header header = 1;
+  optional Polygon polygon = 2;
+}

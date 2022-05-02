@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Illuminance {
+  optional Header header = 1;
+  optional float illuminance = 2;
+  optional float variance = 3;
+}

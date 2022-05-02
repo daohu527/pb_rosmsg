@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message JointTrajectory {
+  optional Header header = 1;
+  repeated string joint_names = 2;
+  repeated JointTrajectoryPoint points = 3;
+}

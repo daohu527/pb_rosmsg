@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message PoseArray {
+  optional Header header = 1;
+  repeated Pose poses = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message GridCells {
+  optional Header header = 1;
+  optional float cell_width = 2;
+  optional float cell_height = 3;
+  repeated Point cells = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message CompressedImage {
+  optional Header header = 1;
+  optional string format = 2;
+  repeated uint32 data = 3;
+}

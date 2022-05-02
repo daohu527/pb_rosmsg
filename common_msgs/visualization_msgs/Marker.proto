@@ -1,0 +1,48 @@
+syntax = "proto2";
+
+package std_msgs;
+
+message Marker {
+
+  enum {
+    ARROW=0
+    CUBE=1
+    SPHERE=2
+    CYLINDER=3
+    LINE_STRIP=4
+    LINE_LIST=5
+    CUBE_LIST=6
+    SPHERE_LIST=7
+    POINTS=8
+    TEXT_VIEW_FACING=9
+    MESH_RESOURCE=10
+    TRIANGLE_LIST=11
+  }
+
+  enum {
+    ADD=0
+    MODIFY=0
+    DELETE=2
+    DELETEALL=3
+  }
+
+  optional Header header = 1;
+  optional string ns = 2;
+  optional int32 id = 3;
+  optional int32 type = 4;
+  optional int32 action = 5;
+  optional Pose pose = 6;
+  optional Vector3 scale = 7;
+  optional ColorRGBA color = 8;
+  optional duration lifetime = 9;
+  optional bool frame_locked = 10;
+
+  repeated Point points = 11;
+  repeated ColorRGBA colors = 12;
+
+  optional string text = 13;
+
+  optional string mesh_resource = 14;
+  optional bool mesh_use_embedded_materials = 15;
+}
+
