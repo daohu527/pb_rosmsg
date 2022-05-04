@@ -1,6 +1,8 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.sensor_msgs;
+
+import "common_msgs/sensor_msgs/JoyFeedback.proto";
 
 message JoyFeedbackArray {
   repeated JoyFeedback array = 1;

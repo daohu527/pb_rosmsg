@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.geometry_msgs;
 
 message Vector3 {
   optional float x = 1;

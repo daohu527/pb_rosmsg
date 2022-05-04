@@ -1,6 +1,8 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.geometry_msgs;
+
+import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Inertia {
   optional float m = 1;

@@ -1,8 +1,12 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.geometry_msgs;
+
+
+import "std_msgs/Header.proto";
+import "common_msgs/geometry_msgs/Point.proto";
 
 message PointStamped {
   optional Header header = 1;
-  optional Polygon polygon = 2;
+  optional Point point = 2;
 }

@@ -1,6 +1,11 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.visualization_msgs;
+
+
+import "common_msgs/visualization_msgs/InteractiveMarker.proto";
+import "common_msgs/visualization_msgs/InteractiveMarkerPose.proto";
+
 
 message InteractiveMarkerUpdate {
   optional string server_id = 1;

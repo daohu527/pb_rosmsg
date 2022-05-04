@@ -1,6 +1,11 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.stereo_msgs;
+
+
+import "std_msgs/Header.proto";
+import "common_msgs/sensor_msgs/Image.proto";
+import "common_msgs/sensor_msgs/RegionOfInterest.proto";
 
 message DisparityImage {
   optional Header header = 1;

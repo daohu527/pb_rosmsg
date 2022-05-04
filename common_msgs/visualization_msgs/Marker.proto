@@ -1,29 +1,36 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.visualization_msgs;
+
+
+import "std_msgs/Header.proto";
+import "std_msgs/ColorRGBA.proto";
+import "common_msgs/geometry_msgs/Pose.proto";
+import "common_msgs/geometry_msgs/Point.proto";
+import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Marker {
 
   enum {
-    ARROW=0
-    CUBE=1
-    SPHERE=2
-    CYLINDER=3
-    LINE_STRIP=4
-    LINE_LIST=5
-    CUBE_LIST=6
-    SPHERE_LIST=7
-    POINTS=8
-    TEXT_VIEW_FACING=9
-    MESH_RESOURCE=10
-    TRIANGLE_LIST=11
+    ARROW=0;
+    CUBE=1;
+    SPHERE=2;
+    CYLINDER=3;
+    LINE_STRIP=4;
+    LINE_LIST=5;
+    CUBE_LIST=6;
+    SPHERE_LIST=7;
+    POINTS=8;
+    TEXT_VIEW_FACING=9;
+    MESH_RESOURCE=10;
+    TRIANGLE_LIST=11;
   }
 
   enum {
-    ADD=0
-    MODIFY=0
-    DELETE=2
-    DELETEALL=3
+    ADD=0;
+    MODIFY=1;
+    DELETE=2;
+    DELETEALL=3;
   }
 
   optional Header header = 1;

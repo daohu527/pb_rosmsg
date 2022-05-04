@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.visualization_msgs;
 
 message MenuEntry {
   optional uint32 id = 1;
@@ -9,9 +9,9 @@ message MenuEntry {
   optional string command = 4;
 
   enum COMMAND_TYPE{
-    FEEDBACK=0
-    ROSRUN=1
-    ROSLAUNCH=2
+    FEEDBACK=0;
+    ROSRUN=1;
+    ROSLAUNCH=2;
   }
   optional COMMAND_TYPE command_type;
 

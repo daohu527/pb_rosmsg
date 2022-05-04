@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package common_msgs.nav_msgs;
+
+import "std_msgs/Header.proto";
+import "common_msgs/geometry_msgs/PoseStamped.proto";
+
+message Path {
+  optional Header header = 1;
+  repeated PoseStamped poses = 2;
+}
