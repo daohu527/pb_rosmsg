@@ -1,30 +1,35 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.visualization_msgs;
+
+
+import "common_msgs/geometry_msgs/Quaternion.proto"
+import "common_msgs/visualization_msgs/Marker.proto"
+
 
 message InteractiveMarkerControl {
   optional string name = 1;
   optional Quaternion orientation = 2;
 
   enum ORIENTATION_MODE {
-    INHERIT = 0
-    FIXED = 1
-    VIEW_FACING = 2
+    INHERIT = 0;
+    FIXED = 1;
+    VIEW_FACING = 2;
   }
 
   optional ORIENTATION_MODE orientation_mode = 3;
 
   enum INTERACTION_MODE {
-    NONE = 0
-    MENU = 1
-    BUTTON = 2
-    MOVE_AXIS = 3
-    MOVE_PLANE = 4
-    ROTATE_AXIS = 5
-    MOVE_ROTATE = 6
-    MOVE_3D = 7
-    ROTATE_3D = 8
-    MOVE_ROTATE_3D = 9
+    NONE = 0;
+    MENU = 1;
+    BUTTON = 2;
+    MOVE_AXIS = 3;
+    MOVE_PLANE = 4;
+    ROTATE_AXIS = 5;
+    MOVE_ROTATE = 6;
+    MOVE_3D = 7;
+    ROTATE_3D = 8;
+    MOVE_ROTATE_3D = 9;
   }
 
   optional INTERACTION_MODE interaction_mode = 4;

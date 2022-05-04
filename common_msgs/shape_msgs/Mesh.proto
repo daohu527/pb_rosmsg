@@ -1,6 +1,10 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.shape_msgs;
+
+
+import "common_msgs/geometry_msgs/Point.proto"
+import "common_msgs/shape_msgs/MeshTriangle.proto"
 
 message Mesh {
   repeated MeshTriangle triangles = 1;

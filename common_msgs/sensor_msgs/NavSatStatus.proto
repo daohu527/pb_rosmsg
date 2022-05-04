@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.sensor_msgs;
 
 message NavSatStatus {
   enum STATUS {
@@ -13,10 +13,10 @@ message NavSatStatus {
   optional STATUS status = 1;
 
   enum SERVICE {
-    SERVICE_GPS =     1
-    SERVICE_GLONASS = 2
-    SERVICE_COMPASS = 4      # includes BeiDou.
-    SERVICE_GALILEO = 8
+    SERVICE_GPS =     1;
+    SERVICE_GLONASS = 2;
+    SERVICE_COMPASS = 4;     # includes BeiDou.
+    SERVICE_GALILEO = 8;
   }
 
   optional SERVICE service = 2;

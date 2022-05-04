@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.trajectory_msgs;
 
 message JointTrajectoryPoint {
   repeated float positions = 1;

@@ -1,6 +1,9 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.diagnostic_msgs;
+
+import "std_msgs/Header.proto";
+import "common_msgs/diagnostic_msgs/DiagnosticStatus.proto";
 
 message DiagnosticArray {
   optional Header header = 1;

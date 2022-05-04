@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.shape_msgs;
 
 message SolidPrimitive {
   enum TYPE{
@@ -14,22 +14,22 @@ message SolidPrimitive {
   repeated float dimensions = 2;
 
   enum {
-    BOX_X=0
-    BOX_Y=1
-    BOX_Z=2
+    BOX_X=0;
+    BOX_Y=1;
+    BOX_Z=2;
   }
 
   enum {
-    SPHERE_RADIUS=0
+    SPHERE_RADIUS=0;
   }
 
   enum {
-    CYLINDER_HEIGHT=0
-    CYLINDER_RADIUS=1
+    CYLINDER_HEIGHT=0;
+    CYLINDER_RADIUS=1;
   }
 
   enum {
-    CONE_HEIGHT=0
-    CONE_RADIUS=1
+    CONE_HEIGHT=0;
+    CONE_RADIUS=1;
   }
 }

@@ -1,6 +1,11 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.sensor_msgs;
+
+
+import "std_msgs/Header.proto";
+import "common_msgs/geometry_msgs/Quaternion.proto"
+import "common_msgs/geometry_msgs/Vector3.proto"
 
 message Imu {
   optional Header header = 1;

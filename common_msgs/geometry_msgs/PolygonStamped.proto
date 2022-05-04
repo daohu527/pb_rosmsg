@@ -1,3 +1,12 @@
-# This represents a Polygon with reference coordinate frame and timestamp
-Header header
-Polygon polygon
+syntax = "proto2";
+
+package common_msgs.geometry_msgs;
+
+
+import "std_msgs/Header.proto";
+import "common_msgs/geometry_msgs/Polygon.proto"
+
+message PolygonStamped {
+  optional Header header = 1;
+  optional Polygon polygon = 2;
+}

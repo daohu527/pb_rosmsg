@@ -1,6 +1,12 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.sensor_msgs;
+
+
+import "std_msgs/Header.proto";
+import "common_msgs/geometry_msgs/Transform.proto"
+import "common_msgs/geometry_msgs/Twist.proto"
+import "common_msgs/geometry_msgs/Wrench.proto"
 
 message MultiDOFJointState {
   optional Header header = 1;

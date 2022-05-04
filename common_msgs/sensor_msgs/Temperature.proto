@@ -1,6 +1,9 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.sensor_msgs;
+
+
+import "std_msgs/Header.proto";
 
 message Temperature {
   optional Header header = 1;

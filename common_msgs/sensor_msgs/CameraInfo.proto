@@ -1,6 +1,10 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.sensor_msgs;
+
+
+import "std_msgs/Header.proto";
+import "common_msgs/sensor_msgs/RegionOfInterest.proto"
 
 message CameraInfo {
   optional Header header = 1;
@@ -19,7 +23,7 @@ message CameraInfo {
   repeated float  R;
 
   # 3x4 row-major matrix
-  repeated float64[12] P;
+  repeated float P;
 
   optional uint32 binning_x;
   optional uint32 binning_y;

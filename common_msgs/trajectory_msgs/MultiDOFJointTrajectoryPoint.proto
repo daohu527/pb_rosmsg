@@ -1,6 +1,10 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.trajectory_msgs;
+
+
+import "common_msgs/geometry_msgs/Transform.proto"
+import "common_msgs/geometry_msgs/Twist.proto"
 
 message MultiDOFJointTrajectoryPoint {
   repeated Transform transforms = 1;

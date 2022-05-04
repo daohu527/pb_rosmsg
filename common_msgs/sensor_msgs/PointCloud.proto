@@ -1,6 +1,12 @@
 syntax = "proto2";
 
-package std_msgs;
+package common_msgs.sensor_msgs;
+
+
+import "std_msgs/Header.proto";
+import "common_msgs/geometry_msgs/Point32.proto"
+import "common_msgs/sensor_msgs/ChannelFloat32.proto"
+
 
 message PointCloud {
   optional Header header = 1;
