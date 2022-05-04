@@ -4,7 +4,7 @@ package common_msgs.geometry_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/Pose.proto"
+import "common_msgs/geometry_msgs/Pose.proto";
 
 message PoseStamped {
   optional Header header = 1;

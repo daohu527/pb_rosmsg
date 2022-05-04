@@ -3,8 +3,8 @@ syntax = "proto2";
 package common_msgs.visualization_msgs;
 
 
-import "common_msgs/geometry_msgs/Quaternion.proto"
-import "common_msgs/visualization_msgs/Marker.proto"
+import "common_msgs/geometry_msgs/Quaternion.proto";
+import "common_msgs/visualization_msgs/Marker.proto";
 
 
 message InteractiveMarkerControl {

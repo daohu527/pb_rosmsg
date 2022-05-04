@@ -4,7 +4,7 @@ package common_msgs.geometry_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/Vector3.proto"
+import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Vector3Stamped {
   optional Header header = 1;

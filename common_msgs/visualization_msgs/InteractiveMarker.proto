@@ -4,9 +4,9 @@ package common_msgs.visualization_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/Pose.proto"
-import "common_msgs/visualization_msgs/MenuEntry.proto"
-import "common_msgs/visualization_msgs/InteractiveMarkerControl.proto"
+import "common_msgs/geometry_msgs/Pose.proto";
+import "common_msgs/visualization_msgs/MenuEntry.proto";
+import "common_msgs/visualization_msgs/InteractiveMarkerControl.proto";
 
 
 message InteractiveMarker {

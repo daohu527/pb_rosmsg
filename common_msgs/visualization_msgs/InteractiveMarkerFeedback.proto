@@ -4,8 +4,8 @@ package common_msgs.visualization_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/Pose.proto"
-import "common_msgs/geometry_msgs/Point.proto"
+import "common_msgs/geometry_msgs/Pose.proto";
+import "common_msgs/geometry_msgs/Point.proto";
 
 message InteractiveMarkerFeedback {
   optional Header header = 1;

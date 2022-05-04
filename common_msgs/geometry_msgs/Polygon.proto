@@ -3,7 +3,7 @@ syntax = "proto2";
 package common_msgs.geometry_msgs;
 
 
-import "common_msgs/geometry_msgs/Point32.proto"
+import "common_msgs/geometry_msgs/Point32.proto";
 
 message Polygon {
   repeated Point32 points = 1;

@@ -3,7 +3,7 @@ syntax = "proto2";
 package common_msgs.nav_msgs;
 
 
-import "common_msgs/geometry_msgs/Pose.proto"
+import "common_msgs/geometry_msgs/Pose.proto";
 
 message MapMetaData {
   optional time map_load_time = 1;

@@ -3,7 +3,7 @@ syntax = "proto2";
 package common_msgs.geometry_msgs;
 
 
-import "common_msgs/geometry_msgs/Pose.proto"
+import "common_msgs/geometry_msgs/Pose.proto";
 
 message PoseWithCovariance {
   optional Pose pose = 1;

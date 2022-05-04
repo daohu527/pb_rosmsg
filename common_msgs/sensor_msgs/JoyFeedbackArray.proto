@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package common_msgs.sensor_msgs;
 
-import "common_msgs/sensor_msgs/JoyFeedback.proto"
+import "common_msgs/sensor_msgs/JoyFeedback.proto";
 
 message JoyFeedbackArray {
   repeated JoyFeedback array = 1;

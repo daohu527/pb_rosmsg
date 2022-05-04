@@ -5,9 +5,9 @@ package common_msgs.visualization_msgs;
 
 import "std_msgs/Header.proto";
 import "std_msgs/ColorRGBA.proto";
-import "common_msgs/geometry_msgs/Pose.proto"
-import "common_msgs/geometry_msgs/Point.proto"
-import "common_msgs/geometry_msgs/Vector3.proto"
+import "common_msgs/geometry_msgs/Pose.proto";
+import "common_msgs/geometry_msgs/Point.proto";
+import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Marker {
 

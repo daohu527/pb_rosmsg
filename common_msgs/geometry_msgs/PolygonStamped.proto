@@ -4,7 +4,7 @@ package common_msgs.geometry_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/Polygon.proto"
+import "common_msgs/geometry_msgs/Polygon.proto";
 
 message PolygonStamped {
   optional Header header = 1;

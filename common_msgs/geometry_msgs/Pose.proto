@@ -3,8 +3,8 @@ syntax = "proto2";
 package common_msgs.geometry_msgs;
 
 
-import "common_msgs/geometry_msgs/Point.proto"
-import "common_msgs/geometry_msgs/Quaternion.proto"
+import "common_msgs/geometry_msgs/Point.proto";
+import "common_msgs/geometry_msgs/Quaternion.proto";
 
 message Pose {
   optional Point position = 1;

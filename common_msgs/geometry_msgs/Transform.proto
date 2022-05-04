@@ -3,8 +3,8 @@ syntax = "proto2";
 package common_msgs.geometry_msgs;
 
 
-import "common_msgs/geometry_msgs/Vector3.proto"
-import "common_msgs/geometry_msgs/Quaternion.proto"
+import "common_msgs/geometry_msgs/Vector3.proto";
+import "common_msgs/geometry_msgs/Quaternion.proto";
 
 message Transform {
   optional Vector3 translation = 1;

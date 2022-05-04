@@ -4,7 +4,7 @@ package common_msgs.nav_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/nav_msgs/MapMetaData.proto"
+import "common_msgs/nav_msgs/MapMetaData.proto";
 
 message OccupancyGrid {
   optional Header header = 1;

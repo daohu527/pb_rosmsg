@@ -4,7 +4,7 @@ package common_msgs.sensor_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/sensor_msgs/LaserEcho.proto"
+import "common_msgs/sensor_msgs/LaserEcho.proto";
 
 
 message MultiEchoLaserScan {

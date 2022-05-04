@@ -4,7 +4,7 @@ package common_msgs.trajectory_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/trajectory_msgs/JointTrajectoryPoint.proto"
+import "common_msgs/trajectory_msgs/JointTrajectoryPoint.proto";
 
 message JointTrajectory {
   optional Header header = 1;

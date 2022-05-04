@@ -3,7 +3,7 @@ syntax = "proto2";
 package common_msgs.visualization_msgs;
 
 
-import "common_msgs/visualization_msgs/Marker.proto"
+import "common_msgs/visualization_msgs/Marker.proto";
 
 message MarkerArray {
   repeated Marker markers = 1;

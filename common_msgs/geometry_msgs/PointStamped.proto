@@ -4,7 +4,7 @@ package common_msgs.geometry_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/Point.proto"
+import "common_msgs/geometry_msgs/Point.proto";
 
 message PointStamped {
   optional Header header = 1;

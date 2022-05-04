@@ -3,7 +3,7 @@ syntax = "proto2";
 package common_msgs.geometry_msgs;
 
 
-import "common_msgs/geometry_msgs/Twist.proto"
+import "common_msgs/geometry_msgs/Twist.proto";
 
 message TwistWithCovariance {
   optional Twist twist = 1;

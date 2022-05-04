@@ -3,7 +3,7 @@ syntax = "proto2";
 package common_msgs.geometry_msgs;
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/Accel.proto"
+import "common_msgs/geometry_msgs/Accel.proto";
 
 message AccelStamped {
   optional Header header = 1;

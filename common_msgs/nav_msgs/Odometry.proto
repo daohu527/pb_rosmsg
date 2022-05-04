@@ -4,8 +4,8 @@ package common_msgs.nav_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/geometry_msgs/PoseWithCovariance.proto"
-import "common_msgs/geometry_msgs/TwistWithCovariance.proto"
+import "common_msgs/geometry_msgs/PoseWithCovariance.proto";
+import "common_msgs/geometry_msgs/TwistWithCovariance.proto";
 
 message Odometry {
   optional Header header = 1;

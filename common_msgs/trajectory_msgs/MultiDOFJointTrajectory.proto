@@ -4,7 +4,7 @@ package common_msgs.trajectory_msgs;
 
 
 import "std_msgs/Header.proto";
-import "common_msgs/trajectory_msgs/MultiDOFJointTrajectoryPoint.proto"
+import "common_msgs/trajectory_msgs/MultiDOFJointTrajectoryPoint.proto";
 
 message MultiDOFJointTrajectory {
   optional Header header = 1;
