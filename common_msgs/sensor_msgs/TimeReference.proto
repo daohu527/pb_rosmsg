@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 
 message TimeReference {
   optional Header header = 1;
-  optional time time_ref = 2;
+  optional uint32 time_ref = 2;
   optional string source = 3;
 }
