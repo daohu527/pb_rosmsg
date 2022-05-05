@@ -3,6 +3,6 @@ syntax = "proto2";
 package common_msgs.actionlib_msgs;
 
 message GoalID {
-  optional time stamp = 1;
+  optional uint32 stamp = 1;
   optional string id = 2;
 }

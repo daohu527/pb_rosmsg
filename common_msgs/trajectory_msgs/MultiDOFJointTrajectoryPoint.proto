@@ -10,5 +10,5 @@ message MultiDOFJointTrajectoryPoint {
   repeated Transform transforms = 1;
   repeated Twist velocities = 2;
   repeated Twist accelerations = 3;
-  optional duration time_from_start = 4;
+  optional int32 time_from_start = 4;
 }

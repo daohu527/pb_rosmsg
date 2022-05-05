@@ -41,7 +41,7 @@ message Marker {
   optional Pose pose = 6;
   optional Vector3 scale = 7;
   optional ColorRGBA color = 8;
-  optional duration lifetime = 9;
+  optional int32 lifetime = 9;
   optional bool frame_locked = 10;
 
   repeated Point points = 11;

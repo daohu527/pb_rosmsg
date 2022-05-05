@@ -7,5 +7,5 @@ message JointTrajectoryPoint {
   repeated float velocities = 2;
   repeated float accelerations = 3;
   repeated float effort = 4;
-  optional duration time_from_start = 5;
+  optional int32 time_from_start = 5;
 }

@@ -33,7 +33,7 @@ message ImageMarker {
   optional ColorRGBA outline_color = 8;
   optional uint32 filled = 9;
   optional ColorRGBA fill_color = 10;
-  optional duration lifetime = 11;
+  optional int32 lifetime = 11;
 
   repeated Point points = 12;
   repeated ColorRGBA outline_colors = 13;
