@@ -8,6 +8,6 @@ import "common_msgs/shape_msgs/MeshTriangle.proto";
 
 message Mesh {
   repeated MeshTriangle triangles = 1;
-  repeated Point vertices = 2;
+  repeated common_msgs.geometry_msgs.Point vertices = 2;
 }
 

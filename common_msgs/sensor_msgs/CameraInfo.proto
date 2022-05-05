@@ -7,26 +7,23 @@ import "std_msgs/Header.proto";
 import "common_msgs/sensor_msgs/RegionOfInterest.proto";
 
 message CameraInfo {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
 
   optional uint32 height = 2;
   optional uint32 width = 3;
 
-  optional string distortion_model;
+  optional string distortion_model = 4;
 
-  repeated float D;
+  repeated float D = 5;
 
-  # 3x3 row-major matrix
-  repeated float  K;
+  repeated float  K = 6;
 
-  # 3x3 row-major matrix
-  repeated float  R;
+  repeated float  R = 7;
 
-  # 3x4 row-major matrix
-  repeated float P;
+  repeated float P = 8;
 
-  optional uint32 binning_x;
-  optional uint32 binning_y;
+  optional uint32 binning_x = 9;
+  optional uint32 binning_y = 10;
 
-  optional RegionOfInterest roi;
+  optional RegionOfInterest roi = 11;
 }

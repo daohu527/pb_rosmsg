@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Pose.proto";
 
 message PoseArray {
-  optional Header header = 1;
-  repeated Pose poses = 2;
+  optional std_msgs.Header header = 1;
+  repeated common_msgs.geometry_msgs.Pose poses = 2;
 }

@@ -6,6 +6,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Accel.proto";
 
 message AccelStamped {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional Accel accel = 2;
 }

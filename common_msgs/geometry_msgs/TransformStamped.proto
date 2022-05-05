@@ -8,7 +8,7 @@ import "common_msgs/geometry_msgs/Transform.proto";
 
 
 message TransformStamped {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional string child_frame_id = 2;
-  optional Transform transform = 3;
+  optional common_msgs.geometry_msgs.Transform transform = 3;
 }

@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+## Build
+cpp_msg/
+py_msg/

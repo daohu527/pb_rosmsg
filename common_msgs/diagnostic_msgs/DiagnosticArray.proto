@@ -6,6 +6,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/diagnostic_msgs/DiagnosticStatus.proto";
 
 message DiagnosticArray {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   repeated DiagnosticStatus status = 2;
 }

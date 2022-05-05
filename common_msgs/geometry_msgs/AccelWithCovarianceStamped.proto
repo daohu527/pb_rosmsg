@@ -6,6 +6,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/AccelWithCovariance.proto";
 
 message AccelWithCovarianceStamped {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional AccelWithCovariance accel = 2;
 }

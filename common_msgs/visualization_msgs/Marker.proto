@@ -11,7 +11,7 @@ import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Marker {
 
-  enum {
+  enum TYPE {
     ARROW=0;
     CUBE=1;
     SPHERE=2;
@@ -26,26 +26,26 @@ message Marker {
     TRIANGLE_LIST=11;
   }
 
-  enum {
+  enum ACTION_TYPE {
     ADD=0;
     MODIFY=1;
     DELETE=2;
     DELETEALL=3;
   }
 
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional string ns = 2;
   optional int32 id = 3;
-  optional int32 type = 4;
-  optional int32 action = 5;
-  optional Pose pose = 6;
-  optional Vector3 scale = 7;
-  optional ColorRGBA color = 8;
+  optional TYPE type = 4;
+  optional ACTION_TYPE action = 5;
+  optional common_msgs.geometry_msgs.Pose pose = 6;
+  optional common_msgs.geometry_msgs.Vector3 scale = 7;
+  optional std_msgs.ColorRGBA color = 8;
   optional int32 lifetime = 9;
   optional bool frame_locked = 10;
 
-  repeated Point points = 11;
-  repeated ColorRGBA colors = 12;
+  repeated common_msgs.geometry_msgs.Point points = 11;
+  repeated std_msgs.ColorRGBA colors = 12;
 
   optional string text = 13;
 

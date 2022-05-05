@@ -22,19 +22,19 @@ message ImageMarker {
     REMOVE=1;
   }
 
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional string ns = 2;
   optional int32 id = 3;
   optional TYPE type = 4;
   optional ACTION action = 5;
-  optional Point position = 6;
+  optional common_msgs.geometry_msgs.Point position = 6;
 
   optional float scale = 7;
-  optional ColorRGBA outline_color = 8;
+  optional std_msgs.ColorRGBA outline_color = 8;
   optional uint32 filled = 9;
-  optional ColorRGBA fill_color = 10;
+  optional std_msgs.ColorRGBA fill_color = 10;
   optional int32 lifetime = 11;
 
-  repeated Point points = 12;
-  repeated ColorRGBA outline_colors = 13;
+  repeated common_msgs.geometry_msgs.Point points = 12;
+  repeated std_msgs.ColorRGBA outline_colors = 13;
 }

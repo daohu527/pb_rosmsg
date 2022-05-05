@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Point.proto";
 
 message PointStamped {
-  optional Header header = 1;
-  optional Point point = 2;
+  optional std_msgs.Header header = 1;
+  optional common_msgs.geometry_msgs.Point point = 2;
 }

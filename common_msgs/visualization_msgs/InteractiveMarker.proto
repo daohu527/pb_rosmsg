@@ -10,8 +10,8 @@ import "common_msgs/visualization_msgs/InteractiveMarkerControl.proto";
 
 
 message InteractiveMarker {
-  optional Header header = 1;
-  optional Pose pose = 2;
+  optional std_msgs.Header header = 1;
+  optional common_msgs.geometry_msgs.Pose pose = 2;
   optional string name = 3;
   optional string description = 4;
   optional float scale = 5;

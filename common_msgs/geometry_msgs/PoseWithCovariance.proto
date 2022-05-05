@@ -6,6 +6,6 @@ package common_msgs.geometry_msgs;
 import "common_msgs/geometry_msgs/Pose.proto";
 
 message PoseWithCovariance {
-  optional Pose pose = 1;
+  optional common_msgs.geometry_msgs.Pose pose = 1;
   repeated float covariance = 2;
 }

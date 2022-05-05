@@ -6,7 +6,7 @@ package common_msgs.sensor_msgs;
 import "std_msgs/Header.proto";
 
 message Illuminance {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional float illuminance = 2;
   optional float variance = 3;
 }

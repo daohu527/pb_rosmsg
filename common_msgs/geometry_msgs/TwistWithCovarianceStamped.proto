@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/TwistWithCovariance.proto";
 
 message TwistWithCovarianceStamped {
-  optional Header header = 1;
-  optional TwistWithCovariance twist = 2;
+  optional std_msgs.Header header = 1;
+  optional common_msgs.geometry_msgs.TwistWithCovariance twist = 2;
 }

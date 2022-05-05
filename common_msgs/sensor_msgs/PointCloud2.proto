@@ -8,7 +8,7 @@ import "common_msgs/sensor_msgs/PointField.proto";
 
 
 message PointCloud2 {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional uint32 height = 2;
   optional uint32 width = 3;
   repeated PointField fields = 4;

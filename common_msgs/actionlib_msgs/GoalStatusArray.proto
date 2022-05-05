@@ -6,6 +6,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/actionlib_msgs/GoalStatus.proto";
 
 message GoalStatusArray {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   repeated GoalStatus status_list = 2;
 }

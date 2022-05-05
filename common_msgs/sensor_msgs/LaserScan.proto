@@ -6,7 +6,7 @@ package common_msgs.sensor_msgs;
 import "std_msgs/Header.proto";
 
 message LaserScan {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional float angle_min = 2;
   optional float angle_max = 3;
   optional float angle_increment = 4;

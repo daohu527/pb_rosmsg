@@ -6,6 +6,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/PoseStamped.proto";
 
 message Path {
-  optional Header header = 1;
-  repeated PoseStamped poses = 2;
+  optional std_msgs.Header header = 1;
+  repeated common_msgs.geometry_msgs.PoseStamped poses = 2;
 }

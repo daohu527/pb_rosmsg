@@ -5,7 +5,7 @@ package common_msgs.actionlib_msgs;
 import "common_msgs/actionlib_msgs/GoalID.proto";
 
 message GoalStatus {
-  optional GoalID goal_id = 1;
+  optional common_msgs.actionlib_msgs.GoalID goal_id = 1;
 
   enum STATUS {
     PENDING         = 0;

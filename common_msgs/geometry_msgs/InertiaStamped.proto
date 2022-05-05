@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Inertia.proto";
 
 message InertiaStamped {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional Inertia inertia = 2;
 }

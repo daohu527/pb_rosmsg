@@ -6,6 +6,6 @@ package common_msgs.geometry_msgs;
 import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Wrench {
-  optional Vector3 force = 1;
-  optional Vector3 torque = 2;
+  optional common_msgs.geometry_msgs.Vector3 force = 1;
+  optional common_msgs.geometry_msgs.Vector3 torque = 2;
 }

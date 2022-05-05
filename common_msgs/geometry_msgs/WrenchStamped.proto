@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Wrench.proto";
 
 message WrenchStamped {
-  optional Header header = 1;
-  optional Wrench wrench = 2;
+  optional std_msgs.Header header = 1;
+  optional common_msgs.geometry_msgs.Wrench wrench = 2;
 }

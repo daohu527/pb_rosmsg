@@ -9,7 +9,7 @@ import "common_msgs/visualization_msgs/Marker.proto";
 
 message InteractiveMarkerControl {
   optional string name = 1;
-  optional Quaternion orientation = 2;
+  optional  common_msgs.geometry_msgs.Quaternion orientation = 2;
 
   enum ORIENTATION_MODE {
     INHERIT = 0;

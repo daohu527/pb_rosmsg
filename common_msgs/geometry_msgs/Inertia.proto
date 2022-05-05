@@ -6,7 +6,7 @@ import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Inertia {
   optional float m = 1;
-  optional Vector3 com = 2;
+  optional common_msgs.geometry_msgs.Vector3 com = 2;
   optional float ixx = 3;
   optional float ixy = 4;
   optional float ixz = 5;
