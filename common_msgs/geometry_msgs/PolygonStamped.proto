@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Polygon.proto";
 
 message PolygonStamped {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional Polygon polygon = 2;
 }

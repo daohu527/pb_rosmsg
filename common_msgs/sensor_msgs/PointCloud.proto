@@ -9,9 +9,9 @@ import "common_msgs/sensor_msgs/ChannelFloat32.proto";
 
 
 message PointCloud {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
 
-  repeated Point32 points = 2;
+  repeated common_msgs.geometry_msgs.Point32 points = 2;
 
   repeated ChannelFloat32 channels = 3;
 }

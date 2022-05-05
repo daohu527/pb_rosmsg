@@ -6,7 +6,7 @@ package common_msgs.sensor_msgs;
 import "std_msgs/Header.proto";
 
 message Joy {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   repeated float axes = 2;
   repeated int32 buttons = 3;
 }

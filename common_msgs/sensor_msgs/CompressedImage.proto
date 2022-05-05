@@ -6,7 +6,7 @@ package common_msgs.sensor_msgs;
 import "std_msgs/Header.proto";
 
 message CompressedImage {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional string format = 2;
   optional bytes data = 3;
 }

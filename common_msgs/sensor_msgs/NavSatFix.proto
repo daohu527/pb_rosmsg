@@ -7,8 +7,8 @@ import "std_msgs/Header.proto";
 import "common_msgs/sensor_msgs/NavSatStatus.proto";
 
 message NavSatFix {
-  optional Header header = 1;
-  optional NavSatStatus status = 2;
+  optional std_msgs.Header header = 1;
+  optional common_msgs.sensor_msgs.NavSatStatus status = 2;
   optional float latitude = 3;
   optional float longitude = 4;
   optional float altitude = 5;

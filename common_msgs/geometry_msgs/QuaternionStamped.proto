@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Quaternion.proto";
 
 message QuaternionStamped {
-  optional Header header = 1;
-  optional Quaternion quaternion = 2;
+  optional std_msgs.Header header = 1;
+  optional  common_msgs.geometry_msgs.Quaternion quaternion = 2;
 }

@@ -4,10 +4,10 @@ package common_msgs.sensor_msgs;
 
 message NavSatStatus {
   enum STATUS {
-    STATUS_NO_FIX =  -1        # unable to fix position
-    STATUS_FIX =      0        # unaugmented fix
-    STATUS_SBAS_FIX = 1        # with satellite-based augmentation
-    STATUS_GBAS_FIX = 2        # with ground-based augmentation
+    STATUS_NO_FIX =  -1;
+    STATUS_FIX =      0;
+    STATUS_SBAS_FIX = 1;
+    STATUS_GBAS_FIX = 2;
   }
 
   optional STATUS status = 1;
@@ -15,7 +15,7 @@ message NavSatStatus {
   enum SERVICE {
     SERVICE_GPS =     1;
     SERVICE_GLONASS = 2;
-    SERVICE_COMPASS = 4;     # includes BeiDou.
+    SERVICE_COMPASS = 4;
     SERVICE_GALILEO = 8;
   }
 

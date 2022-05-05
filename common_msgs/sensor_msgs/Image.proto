@@ -6,7 +6,7 @@ package common_msgs.sensor_msgs;
 import "std_msgs/Header.proto";
 
 message Image {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional uint32 height = 2;
   optional uint32 width = 3;
   optional string encoding = 4;

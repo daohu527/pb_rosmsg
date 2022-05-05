@@ -8,7 +8,7 @@ import "common_msgs/geometry_msgs/Pose.proto";
 import "common_msgs/geometry_msgs/Point.proto";
 
 message InteractiveMarkerFeedback {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional string client_id = 2;
 
   optional string marker_name = 3;
@@ -26,9 +26,9 @@ message InteractiveMarkerFeedback {
 
   optional EVENT_TYPE event_type = 5;
 
-  optional Pose pose = 6;
+  optional common_msgs.geometry_msgs.Pose pose = 6;
   optional uint32 menu_entry_id = 7;
 
-  optional Point mouse_point = 8;
+  optional common_msgs.geometry_msgs.Point mouse_point = 8;
   optional bool mouse_point_valid = 9;
 }

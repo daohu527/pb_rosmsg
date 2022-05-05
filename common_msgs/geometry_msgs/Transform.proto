@@ -7,6 +7,6 @@ import "common_msgs/geometry_msgs/Vector3.proto";
 import "common_msgs/geometry_msgs/Quaternion.proto";
 
 message Transform {
-  optional Vector3 translation = 1;
-  optional Quaternion rotation = 2;
+  optional common_msgs.geometry_msgs.Vector3 translation = 1;
+  optional  common_msgs.geometry_msgs.Quaternion rotation = 2;
 }

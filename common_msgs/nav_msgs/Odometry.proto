@@ -8,8 +8,8 @@ import "common_msgs/geometry_msgs/PoseWithCovariance.proto";
 import "common_msgs/geometry_msgs/TwistWithCovariance.proto";
 
 message Odometry {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional string child_frame_id = 2;
-  optional PoseWithCovariance pose = 3;
-  optional TwistWithCovariance twist = 4;
+  optional common_msgs.geometry_msgs.PoseWithCovariance pose = 3;
+  optional common_msgs.geometry_msgs.TwistWithCovariance twist = 4;
 }

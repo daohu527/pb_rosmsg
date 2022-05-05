@@ -7,6 +7,6 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/PoseWithCovariance.proto";
 
 message PoseWithCovarianceStamped {
-  optional Header header = 1;
-  optional PoseWithCovariance pose = 2;
+  optional std_msgs.Header header = 1;
+  optional common_msgs.geometry_msgs.PoseWithCovariance pose = 2;
 }

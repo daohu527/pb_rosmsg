@@ -5,8 +5,8 @@ package common_msgs.sensor_msgs;
 
 import "std_msgs/Header.proto";
 
-message Image {
-  optional Header header = 1;
+message JointState {
+  optional std_msgs.Header header = 1;
   repeated string name = 2;
   repeated float position = 3;
   repeated float velocity = 4;

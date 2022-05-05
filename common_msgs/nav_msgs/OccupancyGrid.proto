@@ -7,7 +7,7 @@ import "std_msgs/Header.proto";
 import "common_msgs/nav_msgs/MapMetaData.proto";
 
 message OccupancyGrid {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional MapMetaData info = 2;
   optional bytes data = 3;
 }

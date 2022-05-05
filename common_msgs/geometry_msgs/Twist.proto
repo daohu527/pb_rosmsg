@@ -6,6 +6,6 @@ package common_msgs.geometry_msgs;
 import "common_msgs/geometry_msgs/Vector3.proto";
 
 message Twist {
-  optional Vector3 linear = 1;
-  optional Vector3 angular = 2;
+  optional common_msgs.geometry_msgs.Vector3 linear = 1;
+  optional common_msgs.geometry_msgs.Vector3 angular = 2;
 }

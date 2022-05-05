@@ -13,6 +13,6 @@ message MenuEntry {
     ROSRUN=1;
     ROSLAUNCH=2;
   }
-  optional COMMAND_TYPE command_type;
+  optional COMMAND_TYPE command_type = 5;
 
 }

@@ -7,8 +7,8 @@ import "std_msgs/Header.proto";
 import "common_msgs/geometry_msgs/Point.proto";
 
 message GridCells {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional float cell_width = 2;
   optional float cell_height = 3;
-  repeated Point cells = 4;
+  repeated common_msgs.geometry_msgs.Point cells = 4;
 }

@@ -36,7 +36,7 @@ message BatteryState {
     POWER_SUPPLY_TECHNOLOGY_LIMN = 6;
   }
 
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional float voltage = 2;
   optional float temperature = 3;
   optional float current = 4;

@@ -8,7 +8,7 @@ import "common_msgs/sensor_msgs/LaserEcho.proto";
 
 
 message MultiEchoLaserScan {
-  optional Header header = 1;
+  optional std_msgs.Header header = 1;
   optional float angle_min = 2;
   optional float angle_max = 3;
   optional float angle_increment = 4;
